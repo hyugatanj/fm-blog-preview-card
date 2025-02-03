@@ -1,0 +1,116 @@
+:root {
+  /* color preset */
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --ligth-grey : hsl(0, 0%, 42%);
+  --dark-grey : hsl(0, 0%, 7%);
+
+  /* text preset 1: figtree extra bold */
+  --text-preset-1-weight: 800;
+  --text-preset-1-size: 24px;
+
+  /* text preset 2: figtree medium */
+  --text-preset-2-weight: 500;
+  --text-preset-2-size: 16px;
+
+  /* text preset 3: figtree medium */
+  --text-preset-3-size: 14px;
+  --text-preset-3-weight: 500;
+
+  /* text preset 3 (bold): figtree extra bold */
+  --text-preset-4-weight: 800;
+  --text-preset-4-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--Yellow);
+  font-family: Figtree;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--dark-grey);
+  line-height: 150%;
+}
+
+.main-container {
+  width: 384px;
+  height: 522px;
+  background-color: white;
+  border: 1px var(--dark-grey) solid;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 8px 8px black;
+  cursor: pointer;
+}
+
+.main-container:hover {
+  box-shadow: 12px 15px black;;
+  .card-tittle {
+    color: var(--Yellow);
+  }
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-bottom: 24px;
+}
+
+.status-box {
+  background-color: var(--Yellow);
+  width: fit-content;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: var(--text-preset-4-weight);
+  font-size: var(--text-preset-4-size);
+}
+
+.date {
+  font-size: var(--text-preset-3-size);
+  font-weight: var(--text-preset-3-weight);
+  color: var(--dark-grey);
+}
+
+.card-tittle {
+  font-size: var(--text-preset-1-size);
+  font-weight: var(--text-preset-1-weight);
+  color: var(--dark-grey);
+}
+
+.describtion {
+  color: var(--ligth-grey);
+  font-size: var(--text-preset-2-size);
+  font-weight: var(--text-preset-2-weight);
+  width: 320px;
+}
+
+.profile-container {
+  width: 139px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-picture {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.profile-name {
+  color: var(--dark-grey);
+  font-size: var(--text-preset-4-size);
+  font-weight: var(--text-preset-4-weight);
+}
